@@ -1,9 +1,14 @@
 <template>
 	<div>
 		<h1>Nuxteh</h1>
-		<router-link to="/example">
-			Example
-		</router-link>
+		<h2>WordPress + Vue/Nuxt</h2>
+		<ul>
+			<li>
+				<router-link to="/posts">
+					Posts
+				</router-link>
+			</li>
+		</ul>
 	</div>
 </template>
 
