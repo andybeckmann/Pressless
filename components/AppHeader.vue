@@ -1,0 +1,21 @@
+<template>
+	<div>
+		<AppLogo />
+		<AppNavigation />
+	</div>
+</template>
+
+<script>
+import AppLogo from '@/components/AppLogo.vue'
+import AppNavigation from '@/components/AppNavigation.vue'
+
+export default {
+	components: {
+		AppLogo, AppNavigation
+	}
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>

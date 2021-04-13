@@ -1,20 +1,18 @@
 <template>
 	<div>
-		<h1>Nuxteh</h1>
-		<h2>WordPress + Vue/Nuxt</h2>
-		<ul>
-			<li>
-				<router-link to="/posts">
-					Posts
-				</router-link>
-			</li>
-		</ul>
+		<AppHeader />
+		<AppFooter />
 	</div>
 </template>
 
 <script>
-export default {
+import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
+export default {
+	components: {
+		AppHeader, AppFooter
+	}
 }
 </script>
 

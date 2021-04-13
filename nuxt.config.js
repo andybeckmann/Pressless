@@ -1,3 +1,12 @@
+import axios from "axios"
+let dynamicRoutes = () => {
+  return axios
+    .get("")
+    .then(res => {
+      return res.data.map(post => `/blog/${post.slug}`)
+    })
+}
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -44,6 +53,10 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content'
   ],
+
+  generate: {
+    routes: dynamicRoutes
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
