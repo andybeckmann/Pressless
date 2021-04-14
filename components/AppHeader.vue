@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="app--header">
 		<AppLogo />
 		<AppNavigation />
 	</div>
@@ -16,6 +16,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
