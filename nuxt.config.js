@@ -1,18 +1,21 @@
 import axios from "axios"
 let dynamicRoutes = () => {
-  return axios
-    .get("")
+  const routes = axios
+    .get('http://www.theme-wordless.com/wp-json/wp/v2/posts')
     .then(res => {
       return res.data.map(post => `/blog/${post.slug}`)
     })
+  return routes
 }
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  //ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  //target: 'static',
+
+  mode: 'universal',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -29,10 +32,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "~/plugins/posts.server.js"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,10 +59,6 @@ export default {
     '@nuxt/content'
   ],
 
-  generate: {
-    routes: dynamicRoutes
-  },
-
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -70,6 +71,11 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  // Generate configuration:
+  generate: {
+    routes: dynamicRoutes
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
