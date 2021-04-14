@@ -1,8 +1,14 @@
 <template>
-	<article>
+	<div class="app--main">
+		<AppHeader />
+		<div class="app--breadcrumbs">
+			<router-link to="/blog">Blog</router-link> / {{ post.title.rendered }}
+		</div>
 		<h1>{{ post.title.rendered }}</h1>
 		<section v-html="post.content.rendered"></section>
-	</article>
+		<router-link to="/blog">Back to blog</router-link>
+		<AppFooter />
+	</div>
 </template>
 
 <script>
@@ -26,6 +32,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
