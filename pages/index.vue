@@ -1,6 +1,9 @@
 <template>
-	<div>
+	<div class="app--main">
 		<AppHeader />
+		<div class="app--body">
+			<p>WordPress data rendered with Vue using Nuxt</p>
+		</div>
 		<AppFooter />
 	</div>
 </template>
