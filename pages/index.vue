@@ -1,8 +1,8 @@
 <template>
 	<div class="app--main">
 		<AppHeader />
-		<div class="app--body">
-			<p>WordPress data rendered with Vue using Nuxt</p>
+		<div class="app--intro">
+			<p><span>WordPress</span> data rendered with <span>Vue</span> using <span>Nuxt</span></p>
 		</div>
 		<AppFooter />
 	</div>
