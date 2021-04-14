@@ -1,7 +1,6 @@
 <template>
-	<div>
-		<h1>NuxtPress</h1>
-		<h2>WordPress data rendered with Vue using Nuxt</h2>
+	<div class="app--logo">
+		<h1>Pressless</h1>
 	</div>
 </template>
 
@@ -11,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
