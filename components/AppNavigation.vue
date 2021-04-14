@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="app--navigation">
 		<ul>
 			<li>
 				<router-link to="/">
@@ -21,6 +21,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
