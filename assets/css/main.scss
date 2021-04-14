@@ -1,0 +1,96 @@
+// Global
+body {
+	background: #eee;
+	font-family: sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+	a {
+		color: #111;
+		text-decoration: none;
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: normal;
+	}
+}
+
+// <AppHeader />
+.app--header {
+	display: flex;
+
+	// <AppLogo />
+	.app--logo {
+		h1 {
+			font-size: 54px;
+		    background: #111;
+		    display: inline-block;
+		    padding: 15px 25px;
+		    border-radius: 10px;
+		    color: #fff;
+		}
+	}
+
+	// <AppNavigation />
+	.app--navigation {
+		width: 100%;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: right;
+			align-items: right;
+			place-content: flex-end;
+		    padding: 65px 0;
+
+			li {
+				a {
+					text-decoration: none;
+					font-weight: bold;
+					border-bottom: 3px solid #ccc;
+					color: #111;
+					font-size: 20px;
+					padding: 5px 0;
+					margin: 5px 25px 5px 0;
+				}
+			}
+		}
+	}
+}
+
+// App Main
+.app--main {
+	max-width: 960px;
+	margin: 0 auto;
+
+	// App Body
+	.app--body {
+
+		// Posts
+		.app--body-posts {
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			.button-read-more {
+				background: #ddd;
+				padding: 15px 25px;
+				border-radius: 10px;
+				margin: 5px 0 10px;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+// <AppFooter />
+.app--footer {
+	padding: 25px 0;
+	text-align: center;
+}
