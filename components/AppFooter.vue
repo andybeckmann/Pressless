@@ -1,6 +1,6 @@
 <template>
-	<div>
-		&copy; 2021
+	<div class="app--footer">
+		&copy;2021
 	</div>
 </template>
 
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
