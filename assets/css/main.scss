@@ -25,11 +25,11 @@ body {
 	.app--logo {
 		h1 {
 			font-size: 54px;
-		    background: #111;
 		    display: inline-block;
 		    padding: 15px 25px;
 		    border-radius: 10px;
-		    color: #fff;
+		    color: #111;
+		    border: 5px solid #111;
 		}
 	}
 
@@ -50,12 +50,9 @@ body {
 			li {
 				a {
 					text-decoration: none;
-					font-weight: bold;
-					border-bottom: 4px solid #ccc;
 					color: #111;
 					font-size: 20px;
-					padding: 5px 0;
-					margin: 5px 25px 5px 0;
+					margin: 15px 0 15px 45px;
 				}
 			}
 		}
@@ -76,6 +73,10 @@ body {
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
+
+				li {
+					margin-bottom: 50px;
+				}
 			}
 
 			.button-read-more {
@@ -84,6 +85,7 @@ body {
 				border-radius: 10px;
 				margin: 5px 0 10px;
 				display: inline-block;
+				font-weight: bold;
 			}
 		}
 	}
@@ -95,18 +97,19 @@ body {
     	line-height: 150px;
     	font-weight: normal;
 	}
+
 	span {
 		padding: 15px 25px;
     	border-radius: 10px;
     	font-weight: bold;
 		&:nth-of-type(1) {
-			background: #0073aa;
+			background: linear-gradient(70deg, #0073aa, transparent);
 		}
 		&:nth-of-type(2) {
-			background: #1cce8c;
+			background: linear-gradient(70deg, #1cce8c, transparent);
 		}
 		&:nth-of-type(3) {
-			background: #097873;
+			background: linear-gradient(70deg, #097873, transparent);
 		}
 	}
 }
