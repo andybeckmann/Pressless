@@ -61,14 +61,15 @@ body {
 
 // App Main
 .app--main {
-	max-width: 960px;
-	margin: 0 auto;
+	padding: 0 40px;
 
 	// App Body
 	.app--body {
 
 		// Posts
 		.app--body-posts {
+			max-width: 960px;
+			margin: 0 auto;
 			ul {
 				margin: 0;
 				padding: 0;
@@ -96,6 +97,8 @@ body {
 		font-size: 75px;
     	line-height: 150px;
     	font-weight: normal;
+    	max-width: 960px;
+    	margin: 10vh auto;
 	}
 
 	span {
