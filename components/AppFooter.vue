@@ -11,5 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
-
+.app--footer {
+	padding: 25px 0;
+	text-align: center;
+}
 </style>

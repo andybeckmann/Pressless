@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.app--header {
+	display: flex;
+}
 </style>

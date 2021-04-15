@@ -1,12 +1,16 @@
 <template>
 	<div class="app--main">
 		<AppHeader />
-		<div class="app--breadcrumbs">
-			<router-link to="/blog">Blog</router-link> / {{ post.title.rendered }}
+		<div class="app--body-breadcrumbs">
+			<router-link to="/">Pressless</router-link> / <router-link to="/blog">Blog</router-link> / {{ post.title.rendered }}
 		</div>
-		<h1>{{ post.title.rendered }}</h1>
-		<section v-html="post.content.rendered"></section>
-		<router-link to="/blog">Back to blog</router-link>
+		<div class="app--body-post">
+			<h1>{{ post.title.rendered }}</h1>
+			<section v-html="post.content.rendered"></section>
+		</div>
+		<div class="app--body-links">
+			<router-link to="/blog" class="button">← Back to blog</router-link>
+		</div>
 		<AppFooter />
 	</div>
 </template>
@@ -33,5 +37,16 @@ export default {
 </script>
 
 <style lang="scss">
-
+.app--body-breadcrumbs {
+	font-size: 14px;
+	color: #999;
+}
+.app--body-post {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.app--body-links {
+	display: flex;
+	justify-content: center;
+}
 </style>

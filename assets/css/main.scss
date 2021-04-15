@@ -8,6 +8,13 @@ body {
 	a {
 		color: #111;
 		text-decoration: none;
+
+		&.button {
+			padding: 15px 25px;
+			background: #ccc;
+			border-radius: 10px;
+			font-weight: bold;
+		}
 	}
 
 	p {
@@ -15,110 +22,10 @@ body {
 		line-height: 30px;
 		font-weight: normal;
 	}
-}
 
-// <AppHeader />
-.app--header {
-	display: flex;
-
-	// <AppLogo />
-	.app--logo {
-		h1 {
-			font-size: 54px;
-		    display: inline-block;
-		    padding: 15px 25px;
-		    border-radius: 10px;
-		    color: #111;
-		    border: 5px solid #111;
-		}
+	div.app--main {
+		padding: 0 40px;
+		max-width: 1440px;
+		margin: 0 auto;
 	}
-
-	// <AppNavigation />
-	.app--navigation {
-		width: 100%;
-
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
-			display: flex;
-			justify-content: right;
-			align-items: right;
-			place-content: flex-end;
-		    padding: 65px 0;
-
-			li {
-				a {
-					text-decoration: none;
-					color: #111;
-					font-size: 20px;
-					margin: 15px 0 15px 45px;
-				}
-			}
-		}
-	}
-}
-
-// App Main
-.app--main {
-	padding: 0 40px;
-
-	// App Body
-	.app--body {
-
-		// Posts
-		.app--body-posts {
-			max-width: 960px;
-			margin: 0 auto;
-			ul {
-				margin: 0;
-				padding: 0;
-				list-style-type: none;
-
-				li {
-					margin-bottom: 50px;
-				}
-			}
-
-			.button-read-more {
-				background: #ddd;
-				padding: 15px 25px;
-				border-radius: 10px;
-				margin: 5px 0 10px;
-				display: inline-block;
-				font-weight: bold;
-			}
-		}
-	}
-}
-
-.app--intro {
-	p {
-		font-size: 75px;
-    	line-height: 150px;
-    	font-weight: normal;
-    	max-width: 960px;
-    	margin: 10vh auto;
-	}
-
-	span {
-		padding: 15px 25px;
-    	border-radius: 10px;
-    	font-weight: bold;
-		&:nth-of-type(1) {
-			background: linear-gradient(70deg, #0073aa, transparent);
-		}
-		&:nth-of-type(2) {
-			background: linear-gradient(70deg, #1cce8c, transparent);
-		}
-		&:nth-of-type(3) {
-			background: linear-gradient(70deg, #097873, transparent);
-		}
-	}
-}
-
-// <AppFooter />
-.app--footer {
-	padding: 25px 0;
-	text-align: center;
 }
