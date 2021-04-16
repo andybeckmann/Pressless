@@ -18,6 +18,8 @@ export default {
 
 <style lang="scss">
 .app--header {
-	display: flex;
+	@media (min-width: 768px) {
+		display: flex;
+	}
 }
 </style>

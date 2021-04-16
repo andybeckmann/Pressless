@@ -22,17 +22,25 @@ export default {
 <style lang="scss">
 .app--body-intro {
 	p {
-		font-size: 75px;
-		line-height: 150px;
+		font-size: 32px;
+		line-height: 80px;
 		font-weight: normal;
 		max-width: 960px;
 		margin: 10vh auto;
-	}
+		text-align: center;
 
+		@media (min-width: 768px) {
+			text-align: left;
+			font-size: 75px;
+			line-height: 150px;
+		}
+	}
 	span {
-		padding: 15px 25px;
 		border-radius: 10px;
 		font-weight: bold;
+		width: 100%;
+		display: block;
+
 		&:nth-of-type(1) {
 			background: linear-gradient(70deg, #0073aa, transparent);
 		}
@@ -41,6 +49,11 @@ export default {
 		}
 		&:nth-of-type(3) {
 			background: linear-gradient(70deg, #097873, transparent);
+		}
+
+		@media (min-width: 768px) {
+			padding: 15px 25px;
+			display: inline;
 		}
 	}
 }

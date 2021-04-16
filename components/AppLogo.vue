@@ -12,6 +12,14 @@ export default {
 
 <style lang="scss">
 .app--logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		display: block;
+	}
+
 	h1 {
 		font-size: 54px;
 		display: inline-block;
